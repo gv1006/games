@@ -1,0 +1,17 @@
+.scoreboard-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.scoreboard-container p {
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+.scoreboard-section {
+  padding: 10px;
+  border: 1px solid #ccc;
+}

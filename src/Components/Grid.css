@@ -1,0 +1,42 @@
+.grid {
+  width: 40%;
+  margin: auto;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.cell {
+  width: 33.33%;
+  min-height: 100px;
+  min-width: 100px;
+  border: 1px solid white;
+  font-size: 40px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.disabled .cell {
+  border: 1px solid rgb(77, 70, 70);
+  color: rgb(77, 70, 70);
+}
+
+.grid .grid-row:nth-child(1) .cell{
+  border-top: none;
+}
+
+.grid .grid-row:nth-last-child(1) .cell{
+  border-bottom: none;
+}
+
+.grid .grid-row .cell:nth-child(1) {
+  border-left: none;
+}
+
+.grid .grid-row .cell:nth-last-child(1) {
+  border-right: none;
+}
