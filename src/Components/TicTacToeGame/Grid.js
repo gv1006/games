@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import Constants from "../constants";
+import Constants from "../../constants";
 import Cell from "./Cell";
 import './Grid.css';
 const ROW_SIZE = Constants.ROW_SIZE;
 const COLUMN_SIZE = Constants.COLUMN_SIZE;
 
 const Grid = ({ gameState, handleCellClick, currentValue, disabled }) => {
-  console.log(gameState);
+  // console.log(gameState);
   const handleClick = (e) => {
-    console.log(e);
+    // console.log(e);
   }
   const gridElements = [];
   for (let i = 0; i < gameState.length; i++) {

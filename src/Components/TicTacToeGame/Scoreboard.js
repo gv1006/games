@@ -1,9 +1,13 @@
 import React, { memo } from 'react';
 import './Scoreboard.css';
 
+/**
+ * Component for Scoreboard section
+ * @param {Object} props - object which contains title and number of a scoreboard section 
+ * @returns {JSX} Component
+ */
 const ScoreboardSection = (props) => {
   const { title, no } = props;
-  console.log(title);
   return (
     <div className='scoreboard-section'>
       <p className='title'>{title}</p>
@@ -12,8 +16,14 @@ const ScoreboardSection = (props) => {
   );
 }
 
+/**
+ * Component for Scoreboard section
+ * @param {Object} props - object which contains title and number of a scoreboard section 
+ * @returns {JSX} Component
+ */
 const Scoreboard = ({stats}) => {
-  console.log(stats);
+  console.log('re-rendering');
+  // console.log(stats);
   console.log('re-rendering scoreboard...');
   return (
     <div className='scoreboard-container'>
@@ -26,5 +36,4 @@ const Scoreboard = ({stats}) => {
 }
 
 console.log('scoreboard');
-// export default memo(Scoreboard);
-export default Scoreboard;
+export default memo(Scoreboard);
